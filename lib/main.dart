@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz1/design2.dart';
 
 import 'design1.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
 
     return MaterialApp(
-     home: Moody(),
+     home: WorkOut(),
     );
   }
 
