@@ -63,7 +63,7 @@ class _MoodyState extends State<Moody> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 8.0),
+              padding: const EdgeInsets.only(top: 8.0),
               child: Row(
                 children: [
                   Padding(
@@ -93,17 +93,17 @@ class _MoodyState extends State<Moody> {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Padding(
               padding: const EdgeInsets.only(top: 10.0, left: 8.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "Feature",
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
-                  Text(
+                  const Spacer(),
+                  const Text(
                     "see more",
                     style: TextStyle(
                         color: Colors.green,
@@ -112,7 +112,7 @@ class _MoodyState extends State<Moody> {
                   ),
                   InkWell(
                       onTap: () {},
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_forward_ios,
                         color: Colors.green,
                       ))
@@ -140,29 +140,29 @@ class _MoodyState extends State<Moody> {
             ),
       Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Container(
+        child: SizedBox(
           height: 50,
           child: SmoothPageIndicator(
             controller: controller,
             count: 3, // Number of pages
-            effect: WormEffect(
+            effect: const WormEffect(
               dotHeight: 10,
               dotWidth: 10,
               type: WormType.underground,
             ),
           ),
         )),
-            Spacer(),
+            const Spacer(),
             Padding(
               padding: const EdgeInsets.only(top: 10.0, left: 8.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "Exercise",
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
-                  Text(
+                  const Spacer(),
+                  const Text(
                     "see more",
                     style: TextStyle(
                         color: Colors.green,
@@ -183,7 +183,7 @@ class _MoodyState extends State<Moody> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Color(0xffF9F5FF),
+                        color: const Color(0xffF9F5FF),
                         borderRadius: BorderRadius.circular(10)),
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
@@ -193,8 +193,8 @@ class _MoodyState extends State<Moody> {
                               onTap: () {},
                               child:
                                   Image.asset("assets/design1/icon/Group.png")),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 8.0),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
                             child: Text("Relaxation"),
                           )
                         ],
@@ -202,13 +202,13 @@ class _MoodyState extends State<Moody> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Color(0xffFDF2FA),
+                        color: const Color(0xffFDF2FA),
                         borderRadius: BorderRadius.circular(10)),
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
@@ -218,8 +218,8 @@ class _MoodyState extends State<Moody> {
                               onTap: () {},
                               child: Image.asset(
                                   "assets/design1/icon/meditation.png")),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 8.0),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
                             child: Text("Meditaion"),
                           )
                         ],
@@ -234,7 +234,7 @@ class _MoodyState extends State<Moody> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Color(0xffFFFAF5),
+                        color: const Color(0xffFFFAF5),
                         borderRadius: BorderRadius.circular(10)),
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
@@ -244,8 +244,8 @@ class _MoodyState extends State<Moody> {
                               onTap: () {},
                               child: Image.asset(
                                   "assets/design1/icon/breathing.png")),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 8.0),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
                             child: Text("Breathing"),
                           )
                         ],
@@ -253,13 +253,13 @@ class _MoodyState extends State<Moody> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Color(0xffF0F9FF),
+                        color: const Color(0xffF0F9FF),
                         borderRadius: BorderRadius.circular(10)),
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
@@ -269,8 +269,8 @@ class _MoodyState extends State<Moody> {
                               onTap: () {},
                               child:
                                   Image.asset("assets/design1/icon/yoga.png")),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 8.0),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 8.0),
                             child: Text("Yoga"),
                           ),
                         ],

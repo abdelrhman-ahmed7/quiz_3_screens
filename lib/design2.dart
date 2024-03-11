@@ -41,9 +41,9 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
                         child:
                             Image.asset("assets/design2/logo/Ellipse 10.png"),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
                           "Hello, Jade",
                           style: TextStyle(fontSize: 20),
                         ),
@@ -55,14 +55,14 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
                       ),
                     ],
                   ),
-                  Text(
+                  const Text(
                     "Ready to workout?",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             SizedBox(
               height: 180,
               child: Container(
@@ -87,7 +87,7 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             const Row(
               children: [
                 Text(
@@ -96,7 +96,7 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Column(
               children: <Widget>[
                 TabBar.secondary(
@@ -129,18 +129,18 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
 
                   Column(children: [
                     Image.asset("assets/design2/icon/Frame 3466507.png"),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Text("Morning Yoga",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Text("Improving mental Focus"),
                     ),
                     Row(children:[
                       Image.asset("assets/design2/icon/clock.png"),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: Text("30 Mins"),
                       ),
                     ]),
@@ -152,7 +152,7 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
                 ],
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
@@ -167,16 +167,16 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
                       padding: const EdgeInsets.all(8.0),
                       child: Image.asset("assets/design2/icon/Frame 3466507 (1).png"),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Text("Plank Exercise",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                     ),
-                    Text("Improving posture and stability"),
+                    const Text("Improving posture and stability"),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(children:[
                         Image.asset("assets/design2/icon/clock.png"),
-                        Text("30 Mins"),
+                        const Text("30 Mins"),
                       ]),
                     ),
                   ],),
@@ -237,7 +237,7 @@ class _WorkOutState extends State<WorkOut> with TickerProviderStateMixin {
             const SizedBox(height: 8),
             Text(
               value,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ],
         ),
